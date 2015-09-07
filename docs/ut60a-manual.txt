@@ -1,0 +1,1668 @@
+Model UT60A: OPERATING MANUAL
+
+Table of Contents
+Title
+Page
+Overview
+3
+Unpacking Inspection
+4
+Safety Information
+5
+Rules For Safe Operation
+6
+International Electrical Symbols
+8
+The Meter Structure
+9
+Rotary Switch
+10
+Functional Buttons
+11
+Display Symbols
+14
+Measurement Ranges
+17
+A.
+Selecting a Measurement Range
+17
+B.
+Manual Ranging and Autoranging
+17
+Measurement Operation
+19
+A.
+AC & DC Voltage Measurement
+19
+B.
+Measuring Continuity, Diodes &
+Resistance
+21
+C.
+Capacitance Measurement
+24
+D.
+Frequency & Duty Cycle Measurement
+26
+E.
+DC or AC Current Measurement
+28
+The POWER Button
+30
+The BLUE Button
+30
+The Use of Relative Value Mode
+30
+Operation of Hold Mode
+31
+General Specifications
+32
+Accuracy Specifications
+33
+A.
+AC Voltage
+33
+B.
+DC Voltage
+33
+C.
+Continuity, Diodes & Resistance Test
+34
+D.
+Capacitance
+35
+E.
+Frequency & Duty Cycle
+35
+F.
+DC Current
+36
+G.
+AC Current
+36
+
+1
+
+Model UT60A: OPERATING MANUAL
+
+Title
+Maintenance
+A.
+General Service
+B.
+Testing the Fuses
+C.
+Replacing the Battery
+D.
+Replacing the Fuses
+RS232C Serial Port
+A.
+RS232C Port Cable
+B.
+Setting of RS232C Serial Ports
+C.
+System Requirements for Installing
+the UT60A Interface Program
+
+2
+
+Page
+37
+37
+37
+38
+39
+41
+41
+41
+42
+
+Model UT60A: OPERATING MANUAL
+
+Overview
+This Operating Manual covers information on safety and
+cautions. Please read the relevant information carefully
+and observe all the Warnings and Notes strictly.
+
+Warning
+To avoid electric shock or personal injury, read the
+"Safety Information" and "Rules for Safe Operation"
+carefully before using the Meter.
+Digital Multimeter Model UT60A (hereafter referred to
+as "the Meter") has autorange and manual range options
+with maximum reading 3999. The enclosure structure
+design adopted advanced "co-injection" technique in
+order to provide sufficient insulation.
+In addition to the conventional measuring functions, it
+is equipped with a RS232C standard serial port for easy
+connection with computer to realize macro recording and
+monitoring and capture of transient dynamic data,
+displaying change of waveform during the measurement,
+providing data and evidence to engineering technicians
+for scientific research. This is also a highly applied digital
+multimeter of good performance with full overload
+protection.
+
+3
+
+Model UT60A: OPERATING MANUAL
+
+Unpacking Inspection
+Open the package case and take out the Meter. Check
+the following items carefully to see any missing or
+damaged part:
+Description
+Qty
+Operating Manual
+1 piece
+Test Lead
+1 pair
+9V Battery (NEDA1604, 6F22 or 006P) 1 piece
+(installed)
+4 RS232C Interface Cable
+1 piece
+5 CD-ROM (Installation Guide & Computer 1 piece
+Interface Software)
+In the event you find any missing or damage, please
+contact your dealer immediately.
+Item
+1
+2
+3
+
+4
+
+Model UT60A: OPERATING MANUAL
+
+Safety Information
+This Meter complies with the standards IEC61010: in
+pollution degree 2, overvoltage category (CAT. III 1000V,
+CAT. IV 600V) and double insulation.
+CAT. III: Distribution level, fixed installation, with smaller
+transient overvoltages than CAT. IV
+CAT IV:Primary supply level, overhead lines, cable
+systems etc.
+Use the Meter only as specified in this operating manual,
+otherwise the protection provided by the Meter may be
+impaired.
+In this manual, a Warning identifies conditions and
+actions that pose hazards to the user, or may damage
+the Meter or the equipment under test.
+A Note identifies the information that user should pay
+attention on.
+International electrical symbols used on the Meter and
+in this Operating Manual are explained on page 8.
+
+5
+
+Model UT60A: OPERATING MANUAL
+
+Rules For Safe Operation (1)
+Warning
+To avoid possible electric shock or personal injury,
+and to avoid possible damage to the Meter or to the
+equipment under test, adhere to the following rules:
+l
+
+l
+
+l
+
+l
+
+l
+
+l
+l
+
+l
+l
+
+Before using the Meter inspect the case. Do not
+use the Meter if it is damaged or the case (or
+part of the case) is removed. Look for cracks
+or missing plastic. Pay attention to the insulation
+around the connectors.
+Inspect the test leads for damaged insulation or
+exposed metal. Check the test leads for
+continuity. Replace damaged test leads with
+identical model number or electrical
+specifications before using the Meter.
+Do not apply more than the rated voltage, as
+marked on the Meter, between the terminals or
+between any terminal and grounding.
+The rotary switch should be placed in the right
+position and no any changeover of range shall
+be made during measurement is conducted to
+prevent damage of the Meter.
+Never working at an effective voltage over 60V
+in DC or 30V rms in AC for there is danger of
+electric shock.
+Use the proper terminals, function, and range
+for your measurements.
+Do not use or store the Meter in an environment
+of high temperature, humidity, explosive,
+inflammable and strong magnetic field. The
+performance of the Meter may deteriorate after
+dampened.
+When using the test leads, keep your fingers
+behind the finger guards.
+Disconnect circuit power and discharge all highvoltage capacitors before testing continuity,
+diodes, resistance, capacitance or current.
+6
+
+Model UT60A: OPERATING MANUAL
+
+Rules For Safe Operation (2)
+l
+
+l
+
+l
+
+l
+
+l
+
+l
+
+l
+l
+
+l
+l
+
+Before measuring current, check the Meter's
+fuses and turn off power to the circuit before
+connecting the Meter to the circuit.
+Replace the battery as soon as the battery
+indicator appears. With a low battery, the Meter
+might produce false readings that can lead to
+electric shock and personal injury.
+Remove test leads and RS232C interface cable
+from the Meter and turn the Meter power off
+before opening the Meter case.
+When servicing the Meter, use only the same
+model number or identical electrical
+specifications replacement parts.
+The internal circuit of the Meter shall not be
+altered at will to avoid damage of the Meter and
+any accident.
+Soft cloth and mild detergent should be used to
+clean the surface of the Meter when servicing.
+No abrasive and solvent should be used to
+prevent the surface of the Meter from corrosion,
+damage and accident.
+The Meter is suitable for indoor use.
+Under the environment with high (+/-4kV)
+electrostatic discharge, the Meter may not be
+operated as normal condition. The user may
+require resetting the Meter.
+Turn the Meter off when it is not in use and take
+out the battery when not using for a long time.
+Constantly check the battery as it may leak when
+it has been using for some time, replace the
+battery as soon as leaking appears. A leaking
+battery will damage the Meter.
+
+7
+
+Model UT60A: OPERATING MANUAL
+
+International Electrical Symbols
+AC (Alternating Current).
+DC (Direct Current).
+AC or DC.
+Grounding.
+Double Insulated.
+Deficiency of Built-In Battery.
+Continuity Test.
+Diode.
+Capacitance Test.
+Fuse.
+Warning. Refer to the Operating Manual.
+Conforms to Standards of European Union.
+
+8
+
+Model UT60A: OPERATING MANUAL
+
+The Meter Structure
+
+9
+
+Model UT60A: OPERATING MANUAL
+
+10
+
+Model UT60A: OPERATING MANUAL
+
+11
+
+Model UT60A: OPERATING MANUAL
+
+12
+
+Model UT60A: OPERATING MANUAL
+
+13
+
+Model UT60A: OPERATING MANUAL
+
+Display Symbols (1)
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+8
+
+15
+
+9
+
+1
+kM
+nFHz
+VA
+
+AC
+
+16
+
+14
+
+10 ~ 14
+
+Model UT60A: OPERATING MANUAL
+
+Display Symbols (2)
+
+15
+
+Model UT60A: OPERATING MANUAL
+
+16
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Ranges (1)
+A measurement range determines the highest value the
+Meter can measure. Most Meter functions have more
+than one range. See "Accuracy Specifications."
+
+A. Selecting a Measurement Range
+Being in the right measurement range is important:
+l
+l
+
+If the range is too low for the input, the Meter displays
+to indicate an overload.
+If the range is too high, the Meter will not display
+the most accurate measurement.
+
+B. Manual Ranging and Autoranging
+The Meter has both manual range and autorange options:
+l
+
+l
+
+In the autorange mode, the Meter selects the best
+range for the input detected.
+This allows you to switch test points without having
+to reset the range.
+In the manual range mode, you select the range.
+This allows you to override autorange and lock the
+Meter in a specific range.
+
+The Meter defaults to the autorange mode in
+measurement functions that have more than one range.
+When the Meter is in the autorange mode,
+is
+displayed.
+
+17
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Ranges (2)
+To enter and exit the manual range mode:
+1.
+
+2.
+
+Press RANGE.
+The Meter enters the manual range mode and
+turns off.
+Each presses of RANGE increments the range.
+When the highest range is reached, the Meter wraps
+to the lowest range.
+To exit the manual range mode, press and hold
+RANGE for over 2 seconds.
+The Meter returns to the autorange mode and
+is displayed.
+
+Note
+l If you manually change the measurement range
+after entering the REL or Hold modes, the Meter
+exits these modes.
+l Under frequency/duty cycle and capacitance
+measurement, only autorange mode is available.
+
+18
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (1)
+A. AC & DC Voltage Measurement
+Warning
+To avoid harms to you or damages to the Meter from
+electric shock, please do not attempt to measure
+voltages higher than 1000V / 750V rms although
+readings may be obtained.
+AC Voltage Measurement (see figure 3)
+
+Red
+
+Black
+
+(figure 3)
+
+The AC voltage ranges are: 4.000V, 40.00V, 400.0V and
+750.0V. To measure AC Voltage, connect the Meter as
+follows:
+1.
+2.
+3.
+
+Insert the red test lead into the HzV terminal and
+the black test lead into the COM terminal.
+Set the rotary switch to Hz V and press BLUE
+button to select AC measurement mode.
+Connect the test leads across with the object being
+measured.
+The measured value shows on the display, which
+is effective value of sine wave (mean value
+response).
+
+19
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (2)
+Note
+l In each range, the Meter has an input impedance
+of 10M . This loading effect can cause measurement
+errors in high impedance circuits. If the circuit
+impedance is less than or equal to 10k , the error
+is negligible (0.1% or less).
+l When AC voltage measurement has been
+completed, disconnect the connection between the
+testing leads and the circuit under test.
+DC Voltage Measurement (see figure 4)
+
+Select
+
+Hz
+V
+
+red
+
+black
+
+(figure 4)
+
+The DC Voltage ranges are: 400.0mV, 4.000V, 40.00V,
+400.0V and 1000V. To measure DC voltage, connect
+the Meter as follows:
+1.
+2.
+
+3.
+
+Insert the red test lead into the HzV terminal and
+the black test lead into the COM terminal.
+Set the rotary switch to Hz V; DC measurement
+is default or press BLUE button to select DC
+measurement mode.
+Connect the test leads across with the object being
+measured.
+The measured value shows on the display.
+
+20
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (3)
+Note
+l In each range, the Meter has an input impedance
+of 10M . This loading effect can cause measurement
+errors in high impedance circuits. If the circuit
+impedance is less than or equal to 10k , the error
+is negligible (0.1% or less).
+l When DC voltage measurement has been
+completed, disconnect the connection between the
+testing leads and the circuit under test.
+
+B. Measuring Continuity, Diodes & Resistance
+Warning
+To avoid damages to the Meter or to the devices
+under test, disconnect circuit power and discharge
+all the high-voltage capacitors before measuring
+continuity, diodes & resistance.
+Testing for Continuity (see figure 5)
+
+Select
+
+red
+
+black
+
+(figure 5)
+
+To test for continuity, connect the Meter as below:
+1. Insert the red test lead into the HzV terminal and
+the black test lead into the COM terminal.
+2. Set the rotary switch to
+and press BLUE
+button to select measurement mode.
+3. The buzzer sounds if the resistance of a circuit under
+test is less than 100 .
+
+21
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (4)
+Note
+l The LCD displays
+indicating the circuit being
+tested is open.
+l When continuity testing has been completed,
+disconnect the connection between the testing leads
+and the circuit under test.
+Testing Diodes (see figure 6)
+
+Select
+
+red
+
+black
+
+(figure 6)
+
+Use the diode test to check diodes, transistors, and other
+semiconductor devices. The diode test sends a current
+through the semiconductor junction, and then measures
+the voltage drop across the junction. A good silicon
+junction drops between 0.5V and 0.8V.
+To test a diode out of a circuit, connect the Meter as
+follows:
+1.
+2.
+3.
+
+Insert the red test lead into the HzV terminal and
+the black test lead into the COM terminal.
+Set the rotary switch to
+and press BLUE
+button to select
+measurement mode.
+For forward voltage drop readings on any
+semiconductor component, place the red test lead
+on the component's anode and place the black test
+lead on the component's cathode.
+The measured value shows on the display.
+
+22
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (5)
+Note
+l In a circuit, a good diode should still produce a
+forward voltage drop reading of 0.5V to 0.8V;
+however, the reverse voltage drop reading can vary
+depending on the resistance of other pathways
+between the probe tips.
+l Connect the test leads to the proper terminals as
+said above to avoid error display.
+l The LCD will display
+indicating open-circuit for
+wrong connection.
+l The unit of diode is Volt (V), displaying the positiveconnection voltage-drop value.
+l When diode testing has been completed, disconnect
+the connection between the testing leads and the
+circuit under test.
+Resistance Measurement (see figure 7)
+
+Select
+
+red
+
+black
+
+(figure 7)
+
+The resistance ranges are: 400.0 , 4.000k , 40.00k ,
+400.0k , 4.000M
+and 40.00M
+. To measure
+resistance, connect the Meter as follows:
+1.
+2.
+
+Insert the red test lead into the HzV terminal and
+the black test lead into the COM terminal.
+Set the rotary switch to
+, resistance
+measurement ( ) is defaults or press BLUE button
+to select measurement mode.
+
+23
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (6)
+3.
+
+Connect the test leads across with the object being
+measured.
+The measured value shows on the display.
+
+Note
+l The test leads can add 0.1 to 0.2 of error to
+resistance measurement. To obtain precision
+readings in low-resistance measurement, that is the
+range of 400.0 , short-circuit the input terminals
+beforehand, using the relative value function button
+REL to automatically subtract the value measured
+when the testing leads are short-circuited from the
+reading.
+l For high-resistance measurement (>1M ), it is
+normal taking several seconds to obtain a stable
+reading.
+l If reading with shorted test leads is not 0.5 ,
+check for loose test leads, incorrect function selection,
+or enabled Data Hold function.
+l The LCD displays
+indicating open-circuit for the
+tested resistor or the resistor value is higher than
+the maximum range of the Meter.
+l When resistance measurement has been completed,
+disconnect the connection between the testing leads
+and the circuit under test.
+
+C. Capacitance Measurement (see figure 8)
+
+red
+
+black
+
+(figure 8)
+
+24
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (7)
+Warning
+To avoid damage to the Meter or to the equipment
+under test, disconnect circuit power and discharge
+all high-voltage capacitors before measuring
+capacitance.
+Use the DC Voltage function to confirm that the
+capacitor is discharged. Never attempt to input over
+60V in DC or 30V rms in AC to avoid personal
+dangerous.
+The Meter's capacitance ranges are: 40.00nF, 400.0nF,
+4.000µF, 40.00µF, and 100.0µF. To measure capacitance,
+connect the Meter as follows:
+1.
+2.
+3.
+
+Insert the red test lead into the HzVΩ terminal and
+the black test lead into the COM terminal.
+Set the rotary switch to .
+Connect the test leads across with the object being
+measured.
+The measured value shows on the display.
+
+Note
+l For testing the capacitor with polarity, connect the
+red test lead to anode & black test lead to cathode
+instead.
+l To increase the accuracy of capacitance
+measurement especially when measuring under
+400nF, use REL mode to automatically subtract the
+Meter built-in equalized capacitance and residual
+capacitance of test leads from the result.
+l It takes a longer time when testing a high capacitor
+value, the testing time is around 15 seconds in
+100µF range.
+l When capacitance measurement has been
+completed, disconnect the connection between the
+testing leads and the circuit under test.
+
+25
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (8)
+D. Frequency & Duty Cycle Measurement (see figure 9)
+Select
+Hz Test
+
+Red
+
+Black
+
+(figure 9)
+
+Frequency Measurement
+
+The measurement ranges are from 10Hz to 40MHz. To
+measure frequency, connect the Meter as follows:
+1.
+2.
+
+3.
+
+Insert the red test lead into the HzVΩ terminal and
+the black test lead into the COM terminal.
+Set the rotary switch to Hz%; frequency
+measurement (Hz) is default or press Hz% button
+to select Hz measurement mode.
+Connect the test leads across with the object being
+measured.
+The measured value shows on the display.
+
+Note
+l To obtain a stable reading when measuring:
+Input scope > 30V rms & 1 kHz frequency signal:
+Set the rotary switch to Hz V, A Hz,
+mA Hz or Hz A.
+Then press Hz% to select Hz measurement
+mode to obtain frequency value.
+Input scope 30V rms frequency signal:
+Follow the above step 2 carrying out the
+measurement.
+l When making frequency measurement at voltage
+or current range, please mind the following signal
+requirement table:
+26
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (9)
+Range
+
+l
+
+Signal
+Frequency
+Requirement
+Range
+200mV
+µA
+200µA
+10Hz~1kHz
+mA
+20mA
+A
+2A
+When Hz measurement has been completed,
+disconnect the connection between the testing leads
+and the circuit under test.
+
+Duty Cycle Measurement
+
+The duty cycle measurement range is 0.1% ~ 99.9%.
+To measure duty cycle:
+1. Set up the Meter to measure frequency.
+2. To select duty cycle, press Hz again (or until the %
+symbol is shown on the display).
+3. Connect the test leads across with the object being
+measured.
+The measured value shows on the display.
+Note
+l The LCD displays 000.0% indicating the input signal
+is high or low level.
+l To obtain a stable reading when measuring:
+Input scope > 30V rms & 1 kHz frequency signal:
+Set the rotary switch to Hz V, A Hz,
+mA Hz or Hz A.
+Then press Hz% to select Hz measurement
+mode to obtain frequency value.
+Input scope 30V rms frequency signal:
+Follow the above step 2 carrying out the
+measurement.
+l When duty cycle measurement has been completed,
+disconnect the connection between the testing leads
+and the circuit under test.
+27
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (10)
+E. DC or AC Current Measurement (see figure 10)
+Select DC
+or AC
+
+µA Hz,
+mA Hz or
+Hz A.
+
+Black
+
+Red
+
+(figure 10)
+
+Warning
+Never attempt an in-circuit current measurement
+where the open-circuit voltage between the circuit
+and ground is greater than 250V.
+If the fuse burns out during measurement, the Meter
+may be damaged or the operator himself may be
+hurt. Use proper terminals, function, and range for
+the measurement. When the testing leads are
+connected to the current terminals, do not parallel
+them across any circuit.
+The current measurement has 3 measurement positions
+on the rotary switch: A Hz, mA Hz and Hz A.
+The A Hz has a 400.0µA and 4000µA range, with
+auto ranging; the mA Hz has a 40.00mA and 400.0mA
+range, with auto ranging; Hz A position has a 4.000A
+and 10.00A range, with auto ranging.
+To measure current, do the following:
+1. Turn off power to the circuit. Discharge all highvoltage capacitors.
+2. Insert the red test lead into the AmA or 10A or
+terminal and the black test lead into the COM
+terminal.
+3. Set the rotary switch to A Hz, mA Hz or Hz A.
+Use the 10A terminal and Hz A measurement
+position if the current value to be tested is an
+unknown.
+28
+
+Model UT60A: OPERATING MANUAL
+
+Measurement Operation (11)
+4.
+
+5.
+
+6.
+
+The Meter defaults to DC current measurement
+mode. To toggle between DC and AC current
+measurement function, press BLUE button.
+AC current is displayed as an mean value (calibrated
+against sine wave effective value).
+Break the current path to be tested. Connect the
+red test lead to the more positive side of the break
+and the black test lead to the more negative side of
+the break.
+Turn on power to the circuit.
+The measured value shows on the display.
+
+Note
+l For safety sake, the measuring time for high current
+should be 10 seconds for each measurement and
+the interval time between 2 measurements should
+be greater than 15 minutes.
+l When current measurement has been completed,
+disconnect the connection between the testing leads
+and the circuit under test.
+
+29
+
+Model UT60A: OPERATING MANUAL
+
+The POWER button
+This is a self-lock switch use to turn on or off the power
+of the Meter.
+
+The BLUE button
+It uses for selecting the required measurement function
+when there is more than one function at one position of
+the rotary switch.
+
+The Use of Relative Value Mode
+The REL mode applies to all measurement functions
+except in frequency/duty cycle measurement, it subtracts
+a stored value from the present value and displays the
+relative value (∆) as the result.
+The definition is as follows:
+l Relative value (∆) = present value - stored value
+For instance, if the stored value is 20.0V and the
+present value is 22.0V, the reading would be 2.0V.
+If a new measurement value is equal to the stored
+value then display 0.0V.
+To enter or exit REL mode:
+l Use rotary switch to select the measurement function
+before selecting REL∆. If measurement functions
+change manually after REL∆ is selected, the Meter
+exits the REL mode.
+l Press REL∆ to enter REL mode, autoranging turns
+off except under capacitance testing mode, and the
+present measurement range is locked and display
+the last measurement value as "0" as the stored
+value.
+l Press REL∆ again or turn the rotary switch to reset
+the stored value and exit REL Mode.
+Pressing HOLD H in REL mode makes the Meter stop
+updating. Pressing HOLD H again to resume updating.
+30
+
+Model UT60A: OPERATING MANUAL
+
+Operation of Hold Mode
+Warning
+To avoid possibility of electric shock, do not use
+Hold mode to determine if circuits are without power.
+The Hold mode will not capture unstable or noisy
+readings.
+The Hold mode is applicable to all measurement functions.
+l Press HOLD H to enter Hold mode; the Meter
+beeps.
+l Press HOLD H again or turn the rotary switch to
+exit Hold mode; the Meter beeps.
+l In Hold mode,
+is displayed.
+
+31
+
+Model UT60A: OPERATING MANUAL
+
+General Specifications
+l
+
+Maximum Voltage
+between any Terminals: 1000V rms.
+and Grounding
+
+l
+
+Fused Protection :0.5A, 250V fast type Glass
+fuse, 5x20 mm.
+for AmA Input
+Terminal
+
+l
+
+Fused Protection :10A, 250V fast type Glass
+for 10A Input Terminal fuse, 5x20 mm.
+
+l
+l
+l
+
+: Display:3999.
+Maximum Display
+Measurement Speed : Updates 3 times /second.
+o
+o
+o
+o
+Temperature: Operating: 0 C~40 C (32 F ~104 F).
+o
+o
+o
+o
+Storage : -10 C~50 C(14 F~122 F).
+o
+o
+: 75% @ 0 C - 30 C;
+Relative Humidity
+o
+o
+50% @ 31 C- 40 C.
+: 2000 m; Storage: 10000 m.
+Altitude:Operating
+: One piece of 9V NEDA1604
+Battery Type
+or 6F22 or 006P.
+: Display .
+Battery Deficiency
+: Display .
+Data Holding
+: Display .
+Negative reading
+: Display .
+Overloading
+Equipped with full icons display.
+Auto and manual range selectable.
+Dimensions (HxWxL) : 177 x 85 x 40 mm.
+: Approximate 300g (battery
+Weight
+included).
+Safety/Compliances : IEC61010 CAT.III 1000V,
+CAT.IV 600V overvoltage
+and double insulation
+standard.
+Certification
+:
+UL & CUL
+
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+l
+
+l
+
+32
+
+Model UT60A: OPERATING MANUAL
+
+Accuracy Specifications (1)
+Accuracy: (a% reading + b digits) guarantee for 1 year.
+o
+o
+Operating temperature: 23 C 5 C.
+Relative humidity: <75%.
+o
+Temperature coefficient: 0.1 x (specified accuracy) / 1 C.
+
+A. AC Voltage
+Range Resolution
+4V
+
+1mV
+
+40V
+
+10mV
+
+400V
+
+100mV
+
+750V
+
+1V
+
+Overload
+Protection
+
+Accuracy
+
+(1%+5)
+
+1000V DC
+750V AC rms
+continuous.
+
+(1.2%+5)
+
+Remarks:
+l Input impedance 10M .
+l Displays effective value of sine wave (mean value
+response).
+l Frequency response 40Hz ~ 400Hz.
+
+B. DC Voltage
+Range
+
+Resolution
+
+400mV
+
+0.1mV
+
+4V
+
+1mV
+
+40V
+
+10mV
+
+400V
+
+100mV
+
+1000V
+
+1V
+
+Overload
+Protection
+
+Accuracy
+
+(0.8%+3)
+1000V DC
+750V AC rms
+continuous.
+
+(0.8%+1)
+
+(1%+3)
+
+Remark: Input impedance 10M
+
+33
+
+.
+
+Model UT60A: OPERATING MANUAL
+
+Accuracy Specifications (2)
+C. Continuity, Diodes & Resistance Test
+Range
+Continuity Test
+(400.0 )
+Diode
+400
+4k
+40k
+400k
+4M
+40M
+
+Resolution Accuracy
+0.1
+1mV
+0.1
+1
+10
+100
+1k
+10k
+
+Approximate
+100
+N/A
+(1.2%+2)
+
+Overload
+Protection
+
+600Vp
+
+(1%+2)
+(1.2%+2)
+(1.5%+2)
+
+Remarks:
+l Continuity Test (400.0 ) Range:
+Buzzer beeps continuously.
+Open circuit voltage approximate 0.45V.
+l Diode Range:
+Open circuit voltage approximate 1.48V.
+Displays approximate forward voltage drop
+reading 0.5V~0.8V.
+l 400 ~ 40M Range:
+Open circuit voltage approximate 0.45V.
+
+34
+
+Model UT60A: OPERATING MANUAL
+
+Accuracy Specifications (3)
+D. Capacitance
+Range Resolution
+40nF
+400nF
+4 F
+40 F
+100 F
+
+Accuracy
+
+10pF
+100pF
+1nF
+10nF
+100nF
+
+Overload
+Protection
+
+(3%+5)
+
+600Vp
+
+(4%+5)
+
+E. Frequency & Duty Cycle
+Range
+10Hz~
+10MHz
+0.1%~
+99.9%
+(Duty cycle)
+
+Resolution
+N/A
+
+Accuracy
+
+Overload
+Protection
+
+(0.1%+3)
+600Vp
+
+0.01%
+
+N/A
+
+Remarks:
+l 10Hz~10MHz Range:
+Input sensitivity as follows:
+1MHz: 300mV rms;
+>1MHz: 600mV rms.
+Maximum input amplitude: 30V rms.
+l 0.1%~99.9% Range:
+Reading is only for reference purpose.
+
+35
+
+Model UT60A: OPERATING MANUAL
+
+Accuracy Specifications (4)
+F.
+
+DC Current
+Overload
+Protection
+
+Range Resolution Accuracy
+400 A
+4000 A
+40mA
+400mA
+
+0.1 A
+1 A
+0.01mA
+0.1mA
+
+4A
+
+0.001A
+
+10A
+
+0.01A
+
+(1%+2)
+(1.2%+3)
+
+0.5A, 250V,
+fast type Glass
+fuse, 5x20mm
+
+10A, 250V,
+(1.5%+5) fast type Glass
+fuse, 5x20mm
+
+Remark:
+l 4A & 10A Range:
+For continuous measurement 10 seconds and
+interval time between 2 measurements greater than
+15 minutes.
+
+G. AC Current
+Range
+
+Resolutio
+
+400 A
+4000 A
+40mA
+400mA
+
+0.1 A
+1 A
+0.01mA
+0.1mA
+
+4A
+
+0.001A
+
+10A
+
+0.01A
+
+Accuracy
+
+Overload
+Protection
+
+(1.5%+5) 0.5A, 250V,
+fast type Glass
+(2%+5) fuse, 5x20mm
+10A, 250V,
+(2.5%+5) fast type Glass
+fuse, 5x20mm
+
+Remarks:
+l Frequency response 40Hz ~ 400Hz.
+l Displays effective value of sine wave (mean value response).
+l 4A & 10A Range:
+For continuous measurement 10 seconds and
+interval time between 2 measurements greater than
+15 minutes.
+36
+
+Model UT60A: OPERATING MANUAL
+
+Maintenance (1)
+This section provides basic maintenance information
+including battery and fuse replacement instruction.
+Warning
+Do not attempt to repair or service your Meter unless
+you are qualified to do so and have the relevant
+calibration, performance test, and service information.
+To avoid electrical shock or damage to the Meter, do
+not get water inside the case.
+
+A. General Service
+l
+l
+l
+
+l
+
+Periodically wipe the case with a damp cloth and
+mild detergent. Do not use abrasives or solvents.
+To clean the terminals with cotton bar with detergent,
+as dirt or moisture in the terminals can affect readings.
+Press the POWER to turn off the Meter when it is
+not in use and take out the battery when not using
+for a long time.
+Do not store the Meter in a place of humidity, high
+temperature and strong magnetic field.
+
+B. Testing the Fuses
+Warning
+To avoid electrical shock or personal injury, remove
+the test leads and any input signals before replacing
+the battery or fuse.
+To prevent damage or injury, install ONLY replacement
+fuses with identical amperage, voltage, and speed
+ratings.
+
+37
+
+Model UT60A: OPERATING MANUAL
+
+Maintenance (2)
+To test the fuse:
+1. Set the rotary switch to
+and select
+by
+pressing BLUE button.
+2. Plug a test lead into the terminal HzV and touch
+the probe tip to the 10A or AmA terminal.
+l If the Meter beeps, the fuse is good.
+l If the display shows , replace the fuse and
+test again.
+l If the display shows any other value, have the
+Meter serviced and contact your dealer
+immediately.
+If the Meter does not work while the fuse is all right, send
+it to your dealer for repair.
+
+C. Replacing the Battery (see figure 11)
+
+Screw
+
+(figure 11)
+
+Warning
+To avoid false readings, which could lead to possible
+electric shock or personal injury, replace the battery
+as soon as the battery indicator " " appears.
+To replace the battery:
+1.
+
+Press the POWER to turn the Meter off and remove
+all connections from the terminals.
+
+38
+
+Model UT60A: OPERATING MANUAL
+
+Maintenance (3)
+2.
+
+3.
+4.
+5.
+
+Remove the screw from the battery compartment,
+and separate the battery compartment from the case
+bottom.
+Remove the battery from the battery compartment.
+Replace the battery with a new 9V battery
+(NEDA1604, 6F22 or 006P).
+Rejoin the case bottom and battery compartment,
+and reinstall the screw.
+
+D. Replacing the Fuses (see figure 12)
+
+Rubber foot
+Screw
+
+(figure 12)
+
+Warning
+To avoid electrical shock or arc blast, or personal
+injury or damage to the Meter, use specified fuses
+ONLY in accordance with the following procedure.
+To replace the Meter's fuse:
+1.
+2.
+
+3.
+
+4.
+
+Press the POWER to turn the Meter off and remove
+all connections from the terminals.
+Remove the screw from the battery compartment,
+and separate the battery compartment from the case
+bottom.
+Remove the 2 rubber feet and 2 screws from the
+case bottom, and separate the case top from the
+case bottom.
+Remove the fuse by gently prying one end loose,
+and then take out the fuse from its bracket.
+
+39
+
+Model UT60A: OPERATING MANUAL
+
+Maintenance (4)
+5.
+
+6.
+7.
+
+Install ONLY replacement fuses with the identical
+type and specification as follows and make sure the
+fuse is fixed firmly in the bracket.
+Fuse 1:0.5A, 250V, fast type Glass fuse,
+5x20mm.
+Fuse 2: 10A, 250V, fast type Glass fuse,
+5x20 mm.
+Rejoin the battery compartment and the case top,
+and reinstall the screw.
+Rejoin the case bottom and case top, and reinstall
+the 2 screws and 2 rubber feet.
+
+Replacement of the fuses is seldom required. Burning
+of a fuse always results from improper operation.
+
+40
+
+Model UT60A: OPERATING MANUAL
+
+RS232C Serial Port (1)
+A. RS232C Port Cable
+The
+Meter
+D-sub
+9 Pin
+Male
+2
+
+Computer
+D-sub
+D-sub
+9 Pin 25 Pin
+Female Female
+2
+3
+
+Pin
+Name
+
+Remark
+
+RX
+
+Receiving
+Data
+Transmitting
+Data
+Data Terminal
+Ready
+
+3
+
+3
+
+2
+
+TD
+
+4
+
+4
+
+20
+
+DTR
+
+5
+6
+
+5
+6
+
+7
+6
+
+GND
+DSR
+
+7
+
+7
+
+4
+
+RTS
+
+8
+
+8
+
+5
+
+CTS
+
+Grounding
+Data Set
+Ready
+Request To
+Send
+Clear To Send
+
+B. Setting of RS232C Serial Ports
+Default of RS232C serial port for communication is set
+as:
+Baud Rate 2400
+Start bit
+1 (always 0)
+Stop bit
+1 (always 1)
+Data bits 8
+Parity
+1 (Odd)
+
+41
+
+Model UT60A: OPERATING MANUAL
+
+RS232C Serial Port (2)
+C. System Requirements for Installing the UT60A
+Interface Program
+To use UT60A Interface Program, you need the following
+hardware and software:
+l An IBM PC or equivalent computer with 80486 or
+higher processor and 640 x 480 pixel or better
+monitor.
+l Microsoft Windows 95 or above.
+l At least 8MB of RAM.
+l At least 8MB free space in hard drive.
+l Can access to a local or a network CD-ROM.
+l A free serial port.
+l A mouse or other pointing device supported by
+Windows.
+Please refer to the included "Installation Guide &
+Computer Interface Software" for installing and
+operating instructions of the UT60A Interface Program.
+
+~ END ~
+This operating manual is subject to change without notice.
+
+42
+
+Model UT60A: OPERATING MANUAL
+
+43
+
+Model UT60A: OPERATING MANUAL
+
+Copyright 2001 Uni-Trend International Limited.
+All rights reserved.
+
+Manufacturer: UNI-TREND TECHNOLOGY(DONG GUAN)LIMITED
+Address: Dong Fang Da Dao, Bei Shan Dong Fang Industrial
+Development District, Hu Men Town, Dong Guan City,
+Guang Dong Province, China
+Headquarters: Uni-Trend International Limited
+Address: Rm901, 9/F, Nanyang Plaza 57 Hung To Road
+Kwun Tong Kowloon, Hong Kong
+Tel: (852) 2950 9168
+Fax: (852) 2950 9303
+Email: info@uni-trend.com
+http://www.uni-trend.com
+
+44
+
+

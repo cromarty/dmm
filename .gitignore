@@ -1,0 +1,20 @@
+# usual rubbish
+res
+res.*
+*~
+
+# txt files created from PDF files in here
+docs/ES51922.txt
+
+
+# binary files
+linux/src/rawread
+
+
+# object files and other Makefile stuff
+*.o
+*.d
+*.so
+
+# SciTE session files
+*.session

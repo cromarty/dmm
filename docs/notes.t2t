@@ -1,0 +1,67 @@
+
+= Notes on the Controls and Use of the UT60A Unit-T Digital Multimeter =
+
+== These are the controls on the UT60A multimeter ==
+
+=== Top four buttons below display, from left to right ===
+
+
+- Range
+- Hertz %
+- Relative
+- Hold
+
+
+=== Two round buttons below top four buttons, left to right ===
+
+
+- Power
+- Function
+
+
+=== Rotary Switch ===
+
+It's useful that the rotary dial has seven positions.  This allows us to describe the positions of 
+the dial and it's functions in relationship to clock positions.  This helps me as a blind user to 
+use and describe the meter to others.
+
+The horizontal bar across the centre of the rotary dial has no obvious raised pip or other tactile 
+marking that I can detect.
+
+But rotating it fully anti-clockwise until it will go no further, the pointer on the dial is now in 
+the 9 o'clock position.
+
+In the table below each selection has a different position from 9 o'clock, through 10, 11, 12, 1, 2 
+and finally 3 o'clock.
+
+The _function_ column details what the setting will be after presses of the function (blue) button.  
+In some cases repeatedly pressing the function button will cycle it back to it's off position.
+
+For example, when the rotary dial is in the _resistance_ position at 10 o'clock, pressing the 
+function button once will switch to _diode_ mode, one more press will activate the _continuity_ 
+function (audible beep when leads are shorted), and one final press will cycle it back to 
+_resistance_.
+
+From anti-clockwise to clockwise:
+
+|| Unit  | Function  |
+| Voltage  | RMS  |
+| Resistance  | Diode, continuity  |
+| Capacitance  | No blue-button function  |
+| Hertz %  |  |
+| Micro Amps DC  | Micro Amps AC  |
+| Milli Amps DC  | Milli Amps AC  |
+| Amps DC  | Amps AC  |
+
+=== Four sockets at bottom, left to right ===
+
+- Ten Amps
+- Micro amps and Milliamps
+- Common
+- Hertz, Volts, Ohms, Diode, Continuity
+
+ === Operation Notes ===
+
+1.  The blue button defaults to off at power on so this reverts the function to a known state.
+2.  There is no timeout on the power-on setting.
+
