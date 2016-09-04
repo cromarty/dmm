@@ -122,7 +122,7 @@ am__uninstall_files_from_dir = { \
 am__installdirs = "$(DESTDIR)$(libdir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libuni_t_dmm_la_LIBADD =
-am_libuni_t_dmm_la_OBJECTS = uni_t.lo
+am_libuni_t_dmm_la_OBJECTS = uni_t_dmm.lo
 libuni_t_dmm_la_OBJECTS = $(am_libuni_t_dmm_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
@@ -311,7 +311,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 COMPATNUM = @LIBTOOL_VERSION_INFO@
 lib_LTLIBRARIES = libuni_t_dmm.la
-libuni_t_dmm_la_SOURCES = uni_t.c
+libuni_t_dmm_la_SOURCES = uni_t_dmm.c
 libuni_t_dmm_la_LDFLAGS = -version-info $(COMPATNUM)
 AM_CPPFLAGS = -I$(top_srcdir)/include
 all: config.h
@@ -409,7 +409,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/uni_t.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/uni_t_dmm.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
