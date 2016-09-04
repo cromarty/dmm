@@ -7,8 +7,8 @@
 #include <string.h>
 #include <sys/ioctl.h>
 
-#include "fs9721lp3.h"
-#include "unit-t.h"
+//#include "fs9721lp3.h"
+#include "uni_t.h"
 
 DMM_CALLBACK_T *dmmcb = NULL;
 

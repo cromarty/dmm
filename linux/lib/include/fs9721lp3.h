@@ -1,7 +1,7 @@
 /**
 *
 * This header file contains definitions which relate to the Fortune Semiconductor FS9721_LP3 DMM
-* chip which is contained in the Unit-T Digital Multimeters, including my UT60A.
+* chip which is contained in the Uni-T Digital Multimeters, including my UT60A.
 *
 */
 #ifndef FS9721LP3_H
@@ -53,7 +53,7 @@
 
 /**
 * Note: The flags in the user flag byte, which is the last byte, may have different meanings
-* on different models of Unit-T DMMs.
+* on different models of Uni-T DMMs.
 *
 */
 

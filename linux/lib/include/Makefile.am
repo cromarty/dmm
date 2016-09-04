@@ -1,5 +1,5 @@
-unittdmmincludedir = ${includedir}/unittdmm
+unitdmmincludedir = ${includedir}/unittdmm
 
-unittdmminclude_HEADERS = greetings_lib.h
+unitdmminclude_HEADERS = uni_t.h
 
-noinst_HEADERS = mike.h
+noinst_HEADERS = fs9721lp3.h
