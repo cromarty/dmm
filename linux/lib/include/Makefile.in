@@ -80,7 +80,7 @@ build_triplet = @build@
 host_triplet = @host@
 subdir = include
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
-	$(noinst_HEADERS) $(unitdmminclude_HEADERS)
+	$(unitdmminclude_HEADERS)
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
 	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
@@ -139,7 +139,7 @@ am__uninstall_files_from_dir = { \
          $(am__cd) "$$dir" && rm -f $$files; }; \
   }
 am__installdirs = "$(DESTDIR)$(unitdmmincludedir)"
-HEADERS = $(noinst_HEADERS) $(unitdmminclude_HEADERS)
+HEADERS = $(unitdmminclude_HEADERS)
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 # Read a list of newline-separated strings from the standard input,
 # and print each of them once, without duplicates.  Input order is
@@ -276,8 +276,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 unitdmmincludedir = ${includedir}/uni_t_dmm
-unitdmminclude_HEADERS = uni_t_dmm.h
-noinst_HEADERS = fs9721lp3.h
+unitdmminclude_HEADERS = uni_t_dmm.h fs9721lp3.h
 all: all-am
 
 .SUFFIXES:
