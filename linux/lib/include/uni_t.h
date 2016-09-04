@@ -1,8 +1,9 @@
-#ifndef UNIT_T_H
-#define UNIT_T_H
+#ifndef UNI_T_H
+#define UNI_T_H
 
 #include <termios.h>
 #include <pthread.h>
+
 #include "fs9721lp3.h"
 
 #define MAX_TIMEOUTS 10
