@@ -121,17 +121,17 @@ am__uninstall_files_from_dir = { \
   }
 am__installdirs = "$(DESTDIR)$(libdir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
-libunit_dmm_la_LIBADD =
-am_libunit_dmm_la_OBJECTS = uni_t.lo
-libunit_dmm_la_OBJECTS = $(am_libunit_dmm_la_OBJECTS)
+libuni_t_dmm_la_LIBADD =
+am_libuni_t_dmm_la_OBJECTS = uni_t.lo
+libuni_t_dmm_la_OBJECTS = $(am_libuni_t_dmm_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
 am__v_lt_1 = 
-libunit_dmm_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+libuni_t_dmm_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
-	$(AM_CFLAGS) $(CFLAGS) $(libunit_dmm_la_LDFLAGS) $(LDFLAGS) -o \
-	$@
+	$(AM_CFLAGS) $(CFLAGS) $(libuni_t_dmm_la_LDFLAGS) $(LDFLAGS) \
+	-o $@
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -166,8 +166,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(libunit_dmm_la_SOURCES)
-DIST_SOURCES = $(libunit_dmm_la_SOURCES)
+SOURCES = $(libuni_t_dmm_la_SOURCES)
+DIST_SOURCES = $(libuni_t_dmm_la_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -310,9 +310,9 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 COMPATNUM = @LIBTOOL_VERSION_INFO@
-lib_LTLIBRARIES = libunit_dmm.la
-libunit_dmm_la_SOURCES = uni_t.c
-libunit_dmm_la_LDFLAGS = -version-info $(COMPATNUM)
+lib_LTLIBRARIES = libuni_t_dmm.la
+libuni_t_dmm_la_SOURCES = uni_t.c
+libuni_t_dmm_la_LDFLAGS = -version-info $(COMPATNUM)
 AM_CPPFLAGS = -I$(top_srcdir)/include
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
@@ -400,8 +400,8 @@ clean-libLTLIBRARIES:
 	  rm -f $${locs}; \
 	}
 
-libunit_dmm.la: $(libunit_dmm_la_OBJECTS) $(libunit_dmm_la_DEPENDENCIES) $(EXTRA_libunit_dmm_la_DEPENDENCIES) 
-	$(AM_V_CCLD)$(libunit_dmm_la_LINK) -rpath $(libdir) $(libunit_dmm_la_OBJECTS) $(libunit_dmm_la_LIBADD) $(LIBS)
+libuni_t_dmm.la: $(libuni_t_dmm_la_OBJECTS) $(libuni_t_dmm_la_DEPENDENCIES) $(EXTRA_libuni_t_dmm_la_DEPENDENCIES) 
+	$(AM_V_CCLD)$(libuni_t_dmm_la_LINK) -rpath $(libdir) $(libuni_t_dmm_la_OBJECTS) $(libuni_t_dmm_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
