@@ -249,7 +249,6 @@ int dmm_decode_measurement(FS9721_LP3_FRAME_T frame, float *measurement) {
     if (frame.flag[0] & 0x08)
         *measurement /= 1000000.0;         // micro
 
-
     if (frame.digit[0] & 0x08)
         *measurement *= -1; // negate
 
@@ -267,11 +266,11 @@ int dmm_measurement_string(
 
     bzero(measTemp, 16);
         switch (frame.mode & 0x0c) {
-    case 0x08:
+    case AC_FLAG:
         strcat(measString, "AC ");
         break;
 
-    case 0x04:
+    case DC_FLAG:
         strcat(measString, "DC ");
         break;
     }

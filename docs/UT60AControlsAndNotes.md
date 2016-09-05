@@ -17,13 +17,15 @@
 
 Function after slash is with blue function button selected.
 
-* Voltage/ hertz(?)
-* Ohms/continuity
-* capacitance / (no blue function)
-* hertz% / 
-* Micro- amps DC / Micro-amps AC
-* MilliampsDC / Milliamps AC
-* Amps DC / Amps AC
+From the 9 o'clock position to the 3 o'clock position:
+
+1. Voltage/ RMS
+2. Ohms/ diode / continuity (cyclic function)
+3. capacitance / (no blue function)
+4. hertz% / 
+5. Micro- amps DC / Micro-amps AC
+6. MilliampsDC / Milliamps AC
+7. Amps DC / Amps AC
 
 ### Four sockets at bottom, left to right
 
