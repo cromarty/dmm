@@ -637,7 +637,6 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIB@&t@OBJS
-UNITDMM_PKGCONF_DIR
 CPP
 OTOOL64
 OTOOL
@@ -763,7 +762,6 @@ enable_fast_install
 with_gnu_ld
 with_sysroot
 enable_libtool_lock
-with_pkgconfdir
 '
       ac_precious_vars='build_alias
 host_alias
@@ -1412,7 +1410,6 @@ Optional Packages:
   --with-gnu-ld           assume the C compiler uses GNU ld @<:@default=no@:>@
   --with-sysroot=DIR Search for dependent libraries within DIR
                         (or the compiler's sysroot if not specified).
-  --with-pkgconfdir=dir   path where pkgconfig files are stored
 
 Some influential environment variables:
   CC          C compiler command
@@ -11557,31 +11554,7 @@ fi
 ac_config_headers="$ac_config_headers src/config.h"
 
 
-
-@%:@ Check whether --with-pkgconfdir was given.
-if test "${with_pkgconfdir+set}" = set; then :
-  withval=$with_pkgconfdir; pkgconfdir="$withval"
-else
-  pkgconfdir=""
-fi
-
-if test -z "$pkgconfdir"; then
-    eval dir="$libdir"
-    case "$dir" in
-    /*) ;;
-    *) dir="$dir"
-    esac
-    pkgconfdir="$dir/pkgconfig"
-fi
-
-cat >>confdefs.h <<_ACEOF
-@%:@define UNITDMM_PKGCONF_DIR "$pkgconfdir"
-_ACEOF
-
-UNITDMM_PKGCONF_DIR="$pkgconfdir"
-
-
-ac_config_files="$ac_config_files Makefile include/Makefile src/Makefile utils/Makefile utils/uni_t_dmm.pc"
+ac_config_files="$ac_config_files Makefile include/Makefile src/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -12591,8 +12564,6 @@ do
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "include/Makefile") CONFIG_FILES="$CONFIG_FILES include/Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
-    "utils/Makefile") CONFIG_FILES="$CONFIG_FILES utils/Makefile" ;;
-    "utils/uni_t_dmm.pc") CONFIG_FILES="$CONFIG_FILES utils/uni_t_dmm.pc" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac

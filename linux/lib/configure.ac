@@ -32,27 +32,9 @@ fi
 
 AC_CONFIG_HEADERS([src/config.h])
 
-AC_ARG_WITH(pkgconfdir,
-    AS_HELP_STRING([--with-pkgconfdir=dir],
-	[path where pkgconfig files are stored]),
-    pkgconfdir="$withval", pkgconfdir="")
-if test -z "$pkgconfdir"; then
-    eval dir="$libdir"
-    case "$dir" in
-    /*) ;;
-    *) dir="$dir"
-    esac
-    pkgconfdir="$dir/pkgconfig"
-fi
-AC_DEFINE_UNQUOTED(UNITDMM_PKGCONF_DIR, "$pkgconfdir", [directory containing pkgconfig files])
-UNITDMM_PKGCONF_DIR="$pkgconfdir"
-AC_SUBST(UNITDMM_PKGCONF_DIR)
-
 AC_CONFIG_FILES([
  Makefile
 	include/Makefile
  src/Makefile
-	utils/Makefile
-	utils/uni_t_dmm.pc
 ])
 AC_OUTPUT
