@@ -20,9 +20,9 @@ if test -z "$pkgconfdir"; then
     esac
     pkgconfdir="$dir/pkgconfig"
 fi
-AC_DEFINE_UNQUOTED(UNI_T_DMM_PKGCONF_DIR, "$pkgconfdir", [directory containing pkgconfig files])
-UNI_T_DMM_PKGCONF_DIR="$pkgconfdir"
-AC_SUBST(UNI_T_DMM_PKGCONF_DIR)
+AC_DEFINE_UNQUOTED(UNITDMM_PKGCONF_DIR, "$pkgconfdir", [directory containing pkgconfig files])
+UNITDMM_PKGCONF_DIR="$pkgconfdir"
+AC_SUBST(UNITDMM_PKGCONF_DIR)
 
 AC_CONFIG_FILES([
  Makefile
