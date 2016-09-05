@@ -635,7 +635,7 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
-UNI_T_DMM_PKGCONF_DIR
+UNITDMM_PKGCONF_DIR
 CPP
 OTOOL64
 OTOOL
@@ -11553,13 +11553,13 @@ if test -z "$pkgconfdir"; then
 fi
 
 cat >>confdefs.h <<_ACEOF
-#define UNI_T_DMM_PKGCONF_DIR "$pkgconfdir"
+#define UNITDMM_PKGCONF_DIR "$pkgconfdir"
 _ACEOF
 
-UNI_T_DMM_PKGCONF_DIR="$pkgconfdir"
+UNITDMM_PKGCONF_DIR="$pkgconfdir"
 
 
-ac_config_files="$ac_config_files Makefile include/Makefile src/Makefile utils/Makefile"
+ac_config_files="$ac_config_files Makefile include/Makefile src/Makefile utils/Makefile utils/uni_t_dmm.pc"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -12570,6 +12570,7 @@ do
     "include/Makefile") CONFIG_FILES="$CONFIG_FILES include/Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
     "utils/Makefile") CONFIG_FILES="$CONFIG_FILES utils/Makefile" ;;
+    "utils/uni_t_dmm.pc") CONFIG_FILES="$CONFIG_FILES utils/uni_t_dmm.pc" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac

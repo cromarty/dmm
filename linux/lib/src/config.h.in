@@ -59,7 +59,7 @@
 #undef STDC_HEADERS
 
 /* directory containing pkgconfig files */
-#undef UNI_T_DMM_PKGCONF_DIR
+#undef UNITDMM_PKGCONF_DIR
 
 /* Version number of package */
 #undef VERSION
