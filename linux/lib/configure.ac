@@ -7,9 +7,27 @@ AC_PROG_CC
 AM_PROG_AR
 AC_PROG_LIBTOOL
 AC_CONFIG_HEADERS([src/config.h])
+
+AC_ARG_WITH(pkgconfdir,
+    AS_HELP_STRING([--with-pkgconfdir=dir],
+	[path where pkgconfig files are stored]),
+    pkgconfdir="$withval", pkgconfdir="")
+if test -z "$pkgconfdir"; then
+    eval dir="$libdir"
+    case "$dir" in
+    /*) ;;
+    *) dir="$dir"
+    esac
+    pkgconfdir="$dir/pkgconfig"
+fi
+AC_DEFINE_UNQUOTED(UNI_T_DMM_PKGCONF_DIR, "$pkgconfdir", [directory containing pkgconfig files])
+UNI_T_DMM_PKGCONF_DIR="$pkgconfdir"
+AC_SUBST(UNI_T_DMM_PKGCONF_DIR)
+
 AC_CONFIG_FILES([
  Makefile
 	include/Makefile
  src/Makefile
+	utils/Makefile
 ])
 AC_OUTPUT
