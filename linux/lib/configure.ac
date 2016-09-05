@@ -16,6 +16,8 @@ AC_PROG_LN_S
 AM_PROG_AR
 AM_PROG_LIBTOOL
 
+dnl Check for libraries
+AC_CHECK_LIB([pthread],[pthread_mutex_init])
 
 
 test "x$prefix" = xNONE && prefix=$ac_default_prefix
