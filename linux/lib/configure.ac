@@ -29,5 +29,6 @@ AC_CONFIG_FILES([
 	include/Makefile
  src/Makefile
 	utils/Makefile
+	utils/uni_t_dmm.pc
 ])
 AC_OUTPUT
