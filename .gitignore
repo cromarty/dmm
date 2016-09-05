@@ -7,14 +7,25 @@ res.*
 docs/ES51922.txt
 
 
-# binary files
-linux/src/rawread
-
-
-# object files and other Makefile stuff
-*.o
-*.d
-*.so
 
 # SciTE session files
 *.session
+
+
+
+*.la
+*.lo
+*.a
+*.o
+
+linux/lib/Makefile
+linux/lib/include/Makefile
+linux/lib/src/Makefile
+
+linux/lib/config.log
+linux/lib/config.status
+linux/lib/libtool
+linux/lib/src/.deps/
+linux/lib/src/.libs/
+linux/lib/src/config.h
+linux/lib/src/stamp-h1
