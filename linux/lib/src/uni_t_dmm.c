@@ -74,10 +74,6 @@ void *_dmm_read_thread(void *arg) {
 	FS9721_LP3_FRAME_T frame;
 	int timeouts = 0;
 	char readBuffer[256];
-//	struct timeval timeout;
-	//timeout.tv_sec = TIMEOUT_SEC;
-	//timeout.tv_usec = TIMEOUT_USEC;
-
 
 	fd_set readFDS, exceptFDS;
 
@@ -99,20 +95,21 @@ timeout.tv_usec = TIMEOUT_USEC;
 		*/
 		ready = select(FD_SETSIZE, &readFDS, NULL, &exceptFDS, &timeout);
 		if (ready < 0) {
-			dmmcb(*fd, frame, CB_ERROR_SELECT);
-pthread_exit((void*)CB_ERROR_SELECT);
+			if (dmmcb != NULL)
+				dmmcb(*fd, frame, CB_ERROR_SELECT);
+			pthread_exit((void*)CB_ERROR_SELECT);
 		}
-
 
 		if (ready == 0) {
 			// time out, continue the loop
 			timeouts++;
-dmmcb(*fd, frame, CB_ERROR_TIMEOUT);
+			if (dmmcb != NULL)
+				dmmcb(*fd, frame, CB_ERROR_TIMEOUT);
 			if (timeouts >= MAX_TIMEOUTS) {
-		dmmcb(*fd, frame, CB_ERROR_MAXTIMEOUTS);
+				if (dmmcb != NULL)
+					dmmcb(*fd, frame, CB_ERROR_MAXTIMEOUTS);
 				pthread_exit((void*)CB_ERROR_MAXTIMEOUTS);
-}
-
+			}
 
 			continue;
 		}
@@ -123,7 +120,8 @@ dmmcb(*fd, frame, CB_ERROR_TIMEOUT);
 			if (FD_ISSET(i, &exceptFDS)) {
 				if (i == *fd) {
 					/* some kind of error associated with the fd file descriptor */
-dmmcb(*fd, frame, CB_ERROR_EXCEPT);
+					if (dmmcb != NULL)
+						dmmcb(*fd, frame, CB_ERROR_EXCEPT);
 					pthread_exit((void*)CB_ERROR_EXCEPT);
 				}
 			}
@@ -135,45 +133,41 @@ dmmcb(*fd, frame, CB_ERROR_EXCEPT);
 					bzero(readBuffer, 256);
 					bytesRead = read(*fd, readBuffer, 256);
 					if (bytesRead < 0) {
-		dmmcb(*fd, frame, CB_ERROR_READ);
+						if (dmmcb != NULL)
+							dmmcb(*fd, frame, CB_ERROR_READ);
 						pthread_exit((void*)CB_ERROR_READ);
 					}
 
-// frame population
-for ( j = 0 ; j < bytesRead ; j++ )
-{
+					// frame population
+					for ( j = 0 ; j < bytesRead ; j++ ) {
+						if (readBuffer[j] & (nextByte<<4)) {
+							frame.data[nextByte - 1] = readBuffer[j];
+							nextByte++;
+						}
 
-if (readBuffer[j] & (nextByte<<4))
-{
-frame.data[nextByte - 1] = readBuffer[j];
-nextByte++;
-}
+						if (nextByte == 15) {
+							nextByte = 1;
+							// callback
+							if (dmmcb != NULL)
+								dmmcb(*fd, frame, CB_ERROR_NONE);
+						}
 
-if (nextByte == 15)
-{
-nextByte = 1;
-// callback
-if (dmmcb != NULL)
-	dmmcb(*fd, frame, CB_ERROR_NONE);
-}
-
-}
-
+					}
 
 				}
 			}
 
 		}
 
-	}
+	} // end while(timeouts < MAX_TIMEOUTS )
 
 	return (void*)CB_ERROR_NONE;
 
-} // end dmm_read
+} // end dmm_read_thread
 
 int dmm_default_callback(int n, FS9721_LP3_FRAME_T frame, int cbError)
 {
-	printf("Inside default callback\n");
+	return 0;
 } // end dmm_default_callback
 
 void dmm_set_callback(DMM_CALLBACK_T *cb) {
