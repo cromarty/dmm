@@ -74,6 +74,20 @@ int dmm_decode_measurement(FS9721_LP3_FRAME_T frame, float *measurement);
 */
 int dmm_measurement_string(FS9721_LP3_FRAME_T frame, float measurement, char *string);
 
+/**
+*
+* Start the read thread
+*
+*/
+int dmm_start_read_thread(pthread_t *t, int *fd);
+
+/**
+*
+* Cancel the read thread
+*
+*/
+int dmm_cancel_read_thread(pthread_t t);
+
 #endif
 
 

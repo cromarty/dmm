@@ -174,11 +174,11 @@ if (dmmcb != NULL)
 int dmm_default_callback(int n, FS9721_LP3_FRAME_T frame, int cbError)
 {
 	printf("Inside default callback\n");
-}
+} // end dmm_default_callback
 
 void dmm_set_callback(DMM_CALLBACK_T *cb) {
 	dmmcb = cb;
-}
+} // end dmm_set_callback
 
 
 
@@ -254,7 +254,7 @@ int dmm_decode_measurement(FS9721_LP3_FRAME_T frame, float *measurement) {
 
     return 0;
 
-    }
+    } // end dmm_decode
 
 
 int dmm_measurement_string(
@@ -278,7 +278,23 @@ int dmm_measurement_string(
     strcat(measString, measTemp);
     strcat(measString, "V");
     return 0;
-}
+} // end dmm_measurement_string
 
+int dmm_start_read_thread(pthread_t *t, int *fd)
+{
+
+	return pthread_create(t, NULL, _dmm_read_thread, fd);
+
+} // end dmm_start_read_thread
+
+int dmm_cancel_read_thread(pthread_t t)
+{
+	int s;
+	void *res;
+
+	s = pthread_cancel(t);
+	s = pthread_join(t, &res);
+	return 0;
+} // end dmm_cancel_read_thread
 
 
