@@ -1,4 +1,4 @@
-DLL = nvdaControllerClient32.dll
+DLL = nvdaController32.dll
 CCPREFIX = /usr/bin/i686-w64-mingw32-
 CC = $(CCPREFIX)gcc
 CCSOURCES = nvdaController.h
