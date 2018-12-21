@@ -10,7 +10,8 @@ config.log
 config.status
 stamp-h1
 src/.deps/
-
+src/ut60a
+src/ut60a.o
 
 
 # script files
