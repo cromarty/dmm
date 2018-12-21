@@ -1,0 +1,13 @@
+
+# Grant access permissions to users who are in the "plugdev" group.
+# "plugdev" is typically used on Debian based distributions and may not
+# exist elsewhere.
+#
+# This file, when installed, must be installed with a name lexicographically
+# sorted later than the accompanied 50-ut60a.rules
+
+ACTION!="add|change", GOTO="ut60a_rules_plugdev_end"
+
+ENV{ID_UT60A}=="1", MODE="660", GROUP="plugdev"
+
+LABEL="ut60a_rules_plugdev_end"

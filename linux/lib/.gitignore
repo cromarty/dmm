@@ -9,6 +9,6 @@ config.status
 libtool
 Makefile
 src/.deps/
-src/.libs/
+src/.libs/*
 stamp-h1
 

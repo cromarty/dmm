@@ -57,12 +57,13 @@ int dmm_open(const char *device, struct termios *oldtio) {
 	mcr &= ~TIOCM_RTS;
 	mcr |= TIOCM_DTR;
 	ioctl(fd,TIOCMSET,&mcr);
-	tcflush(fd, TCIFLUSH);
+	tcflush(fd, TCIOFLUSH);
 	return(fd);
 }// end DMMOpen
 
 void dmm_close(int fd, struct termios *oldtio) {
 	tcsetattr(fd, TCSANOW, oldtio);
+	tcflush(fd, TCIOFLUSH);
 	close(fd);
 } // end DMMClose
 
@@ -291,4 +292,23 @@ int dmm_cancel_read_thread(pthread_t t)
 	return 0;
 } // end dmm_cancel_read_thread
 
+
+void dmm_dump_raw_frame(FS9721_LP3_FRAME_T frame) {
+	printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", frame.data[0], frame.data[1], frame.data[2], frame.data[3], frame.data[4], frame.data[5], frame.data[6], frame.data[7], frame.data[8], frame.data[9], frame.data[10], frame.data[11], frame.data[12], frame.data[13]);
+} // dmm_dump_raw_frame
+
+void dmm_dump_frame_analysis(FS9721_LP3_FRAME_T frame) {
+	int i;
+	printf("Mode  0x%02x\n", frame.mode);
+	for(i=1;i<9;i++) {
+		printf("Digit %d 0x%02x\n", i, frame.data[i]);
+	}
+
+	/* flags */
+	for(i=0;i<4;i++) {
+		printf("Flag[%d] 0x%02x (0x%02x,0x%02x)\n", i, frame.flag[i], ((frame.flag[i] >> 4) & 0xf), (frame.flag[i] & 0xf));
+	}
+	printf("User %0x02x\n", frame.user);
+	printf("\n");
+}
 

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+tmp=`mktemp`
+
+udevadm info -a -p  $(udevadm info -q path -n $1) > $tmp
+
+product=$(cat $tmp | grep '{product}=="USB')
+serial=$(cat $tmp | grep '{serial}=="'|head -1)
+
+cat <<EOI > 50-ut60a.rules
+##
+## This file is part of ut60a, by Mike Ray <mike.ray@btinternet.com>
+##
+## udev rule to create a /dev/ut60a symlink
+## to the USB to serial converter in use
+##
+
+ACTION=="add", $product, $serial, SYMLINK+="ut60a", ENV{ID_UT60A}="1"
+
+EOI
+

@@ -1,0 +1,9 @@
+##
+## This file is part of ut60a, by Mike Ray <mike.ray@btinternet.com>
+##
+## udev rule to create a /dev/ut60a symlink
+## to the USB to serial converter in use
+##
+
+ACTION=="add",     ATTRS{product}=="USB-Serial Controller D",     ATTRS{serial}=="0000:00:1d.0", SYMLINK+="ut60a", ENV{ID_UT60A}="1"
+
