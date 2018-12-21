@@ -1,19 +1,14 @@
-# usual working files
-res
-*~
+
 
 # Created files
+ar-lib
 autom4te.cache/*
 config.h
 config.log
 config.status
-
 libtool
 Makefile
 src/.deps/
 src/.libs/
-#src/config.h
-
 stamp-h1
-*.o
 

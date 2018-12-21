@@ -8,9 +8,3 @@ docs/ES51922.txt
 
 # SciTE session files
 *.session
-
-
-*.la
-*.lo
-*.a
-*.o
