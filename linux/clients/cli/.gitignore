@@ -1,0 +1,19 @@
+# usual working files
+*~
+res
+
+# Created files
+Makefile
+autom4te.cache/
+config.h
+config.log
+config.status
+stamp-h1
+src/.deps/
+
+
+
+# script files
+make.script
+configure.script
+
