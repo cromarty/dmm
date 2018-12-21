@@ -69,13 +69,6 @@ int dmm_decode_measurement(FS9721_LP3_FRAME_T frame, float *measurement);
 
 /**
 *
-* Format a string with measurement, units and flags.
-*
-*/
-int dmm_measurement_string(FS9721_LP3_FRAME_T frame, float measurement, char *string);
-
-/**
-*
 * Start the read thread
 *
 */

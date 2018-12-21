@@ -252,29 +252,6 @@ int dmm_decode_measurement(FS9721_LP3_FRAME_T frame, float *measurement) {
     } // end dmm_decode
 
 
-int dmm_measurement_string(
-    FS9721_LP3_FRAME_T frame,
-    float measurement,
-    char *measString
-    ) {
-    char measTemp[16];
-
-    bzero(measTemp, 16);
-        switch (frame.mode & 0x0c) {
-    case AC_FLAG:
-        strcat(measString, "AC ");
-        break;
-
-    case DC_FLAG:
-        strcat(measString, "DC ");
-        break;
-    }
-    sprintf(measTemp, "%4.3f ", measurement);
-    strcat(measString, measTemp);
-    strcat(measString, "V");
-    return 0;
-} // end dmm_measurement_string
-
 int dmm_start_read_thread(pthread_t *t, int *fd)
 {
 
